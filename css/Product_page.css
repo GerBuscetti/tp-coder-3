@@ -1,0 +1,341 @@
+:root {
+    /*Paleta de colores*/
+    --blanco: #F2F2F2;
+    --grisclaro: #D1D1D1;
+    --gris: #B8B8B8;
+    --primario: #ffa500;
+    --primariooscuro: #c88200;
+    --secundario: #2979C4;
+    --secundariooscuro: #336596;
+    --negro: #242800;
+
+    --azul: #4091c9;
+    --rojo: #ef3c2d;
+    --verde: #a5eea0;
+
+    --error: #ef3c2d;
+    --sucess: #a5eea0;
+
+    /*Fuente*/
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+.button {
+    padding: 1rem;
+    margin: .5rem;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: var(--primario);
+    border-color: var(--primario);
+    border-style: solid;
+    border-width: .2em;
+    color: var(--blanco);
+    font-size: 1.2rem;
+}
+
+.buttonalt {
+    padding: 1rem;
+    margin: .5rem;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: white;
+    border-color: var(--primario);
+    border-style: solid;
+    border-width: .2em;
+    color: var(--negro);
+    font-size: 1.2rem;
+}
+
+.buttonmini{
+    padding: 1rem;
+    margin: .5rem;
+    width: 40%;
+    border-radius: 2rem;
+    background-color: var(--primario);
+    border-color: var(--primario);
+    border-style: solid;
+    border-width: .2em;
+    color: var(--blanco);
+    font-size: 1.2rem;
+}
+
+.buttonminialt{
+    padding: 1rem;
+    margin: .5rem;
+    width: 40%;
+    border-radius: 2rem;
+    background-color: white;
+    border-color: var(--primario);
+    border-style: solid;
+    border-width: .2em;
+    color: var(--negro);
+    font-size: 1.2rem;
+}
+
+.button:hover,
+.buttonalt:hover,
+.buttonmini:hover,
+.buttonminialt:hover {
+    cursor: pointer;
+    background-color: var(--secundario);
+    transition: .2s;
+}
+
+
+/* # NAV-BAR ############################### */
+
+.headermain {
+    padding: 0.2rem;
+    height: 2rem;
+}
+
+header{
+    background-color: var(--primario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headermain img{
+    height: 2rem;
+}
+.headermain img:hover {
+    background: #f09b08;
+    border-radius: px;    
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.menu img{
+    width: 5rem;
+    margin: .5rem;
+}
+
+a{
+    cursor: pointer;
+}
+.logo{
+    flex-grow: 5;
+    text-align: center;
+    align-self: center;
+    font-size: 3rem;
+    color: var(--blanco);
+}
+
+
+.headerfiltros a:hover { 
+
+    color: #000000;
+    border: 2px solid rgb(248, 170, 36);
+    border-radius: 0px;
+    padding: 2px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.headerfiltros{
+    height: 1rem;
+    color: var(--blanco);
+    padding: .5rem;
+}
+
+/* # MOBILE NAV-BAR ############################### */
+
+.menu {
+    display: none;
+}
+  
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: var(--primario);
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+}
+  
+.overlay--active {
+    width: 100%;
+}
+  
+.overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+  
+.overlay a:hover,
+.overlay a:focus {
+    color: #0088a9;
+}
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: var(--blanco);
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+    
+}
+  
+@media only screen and (max-width: 800px) {
+    .headerfiltros,
+    .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+}
+
+/* # Product_page ############################### */
+
+.proproduct{
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--blanco);
+}
+
+.fotoproducto{
+    align-self: center;
+    width: 60%;
+    float: left;
+}
+
+.fotoproducto img{
+    width: 100%;
+}
+
+.colprecio{
+    width: 38%;
+    float: left;
+    padding-left: 20px;
+}
+
+.descripcion{
+    width: 38%;
+    float: right;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+  
+  /* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: blue;
+}
+  
+  /* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+  /* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+  
+  /* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/* # Product_page mobile ############################### */
+
+@media screen and (max-width: 600px) {
+    .proproduct{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .colprecio{
+        float: left;
+        width: 100%;
+    }
+
+    .fotoproducto{
+        width: 100%;
+    }
+    .descripcion{
+        width: 100%;
+    }
+    
+}

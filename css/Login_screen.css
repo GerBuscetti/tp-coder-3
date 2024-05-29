@@ -1,0 +1,114 @@
+:root {
+    /*Paleta de colores*/
+    --blanco: #F2F2F2;
+    --grisclaro: #D1D1D1;
+    --gris: #B8B8B8;
+    --primario: #ffa500;
+    --primariooscuro: #c88200;
+    --secundario: #2979C4;
+    --secundariooscuro: #336596;
+    --negro: #242800;
+
+    --azul: #4091c9;
+    --rojo: #ef3c2d;
+    --verde: #a5eea0;
+
+    --error: #ef3c2d;
+    --sucess: #a5eea0;
+
+    /*Fuente*/
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+.login-registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primario);
+}
+
+
+input {
+    width: 100%;
+    height: 1rem;
+    margin-bottom: 0px;
+    padding: 1.5rem;
+    border-style: solid;
+    border-width: .2rem;
+    border-color: var(--negro);
+    border-radius: 1rem;
+}
+
+/* # Generales ############################### */
+
+.error {
+    color: var(--error);
+}
+
+.error-message {
+    font-size: 1rem;
+    color: var(--error);
+}
+
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 1);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.contenedor-login {
+    width: 40%;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    background: var(--blanco);
+}
+
+/* # Botones ############################### */
+
+.button {
+    padding: 1rem;
+    margin: .5rem;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: var(--primario);
+    border-color: var(--primario);
+    border-style: solid;
+    border-width: .2em;
+    color: var(--blanco);
+    font-size: 1.2rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--secundario);
+    transition: .2s;
+}
+
+/* # Login & Reg. Screen ############################### */
+
+.logologin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 2rem;
+    color: var(--blanco);
+}
+
+.contenedor-login {
+    width: 40%;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    background: var(--blanco);
+}
+
+.new {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.new a {
+    color: var(--primario);
+}
