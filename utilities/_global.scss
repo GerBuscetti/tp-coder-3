@@ -1,0 +1,40 @@
+
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+a {
+  cursor: pointer;
+}
+
+body.login-registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primario);
+}
+
+.error {
+  color: var(--error);
+}
+
+.error-message {
+  font-size: 1rem;
+  color: var(--error);
+}
+.form.error input {
+  border-color: #ff3860;
+}
+
+
+.success {
+  color: var(--success);
+  border-color: var(--success);
+}
+
+.success-box {
+  border-color: var(--success);
+  border-style: solid;
+}

@@ -1,0 +1,104 @@
+<html>
+
+<head> 
+    <title>Checkout - Bumovar</title>
+
+    <!-- css -->
+     <link rel="stylesheet" type="text/css" href="css/estilos.css" media="all">
+
+    <!-- js -->
+    <script src="js/basics.js" defer></script>
+    <script src="js/checkout.js" defer></script>
+       
+
+</head>
+<body>
+    <div id="backgroundhome">
+        <header class="headermain">
+            <a class="menu"><img src="img/menufinal.png"></a>
+            <a class="logo" onclick="ir_home()">Bumovar</a>
+            <a class="cuenta" href="micuenta.html"><img src="img/userfinal.png"></a>
+            <a class="carrito" href="shopcart.html"><img src="img/carritofinal.png"></a>
+        </header>
+    <div class="formatosforms">
+        <div class="contenedor-login">
+            <form action="" id="form" name="checkout_form" method="get">
+                <h2>Datos de envío</h2>
+                <br>
+                <h3 class="formguide">Dirección: </h3>
+                <input onblur="validarDireccion()" type="text" id="useraddress" name="useraddress" placeholder="Ej: Av. De Las Pampas 2832">
+                <p id="erroraddress" class="error-message"></p>
+                <br>
+                <h3 class="formguide">Piso y/o departament (opcional): </h3>
+                <input type="text" name="userfloor" placeholder="Ej: 10A">
+                <br>
+                <h3 class="formguide">Comentarios: </h3>
+                <input type="text" name="usercomments">
+                <br>
+                <br>
+                <h2>Datos de pago</h2>
+                <label for="cardtype">Tipo de tarjeta:</label>
+                <select name="cardtype">
+                    <option value="debit">Debito</option>
+                    <option value="credit">Credito</option>
+                </select>
+                <br>
+                <h3 class="formguide">Número de tarjeta:</h3>
+                <input onblur="validarNumTarj()" type="number" id="usercardnum" name="usercardnum" placeholder="#### #### #### ####">
+                <p id="errorcardnum" class="error-message"></p>
+                <br>
+                <h3 class="formguide">Código de seguridad: </h3>
+                <input onblur="validarCodTarj()" type="number" id="usercardcode" name="usercardcode" placeholder="###">
+                <p id="errorcardcode" class="error-message"></p>
+                <br>
+                <label for="expirydate">Vencimiento de tarjeta: </label>
+                <select name="month" id="usercardmonth" onblur="validarFecha()">
+                    <option value=""> - </option>
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                    <option value="8"> 8 </option>
+                    <option value="9"> 9 </option>
+                    <option value="10"> 10 </option>
+                    <option value="11"> 11 </option>
+                    <option value="12"> 12 </option>
+                </select>
+                <span> / </span>
+                <select name="year" id="usercardyear" onblur="validarFecha()">
+                    <option value=""> - </option>
+                    <option value="2023"> 2023 </option>
+                    <option value="2024"> 2024 </option>
+                    <option value="2025"> 2025 </option>
+                    <option value="2026"> 2026 </option>
+                    <option value="2027"> 2027 </option>
+                    <option value="2028"> 2028 </option>
+                    <option value="2029"> 2029 </option>
+                    <option value="2030"> 2030 </option>
+                    <option value="2031"> 2031 </option>
+                    <option value="2032"> 2032 </option>
+                    <option value="2033"> 2033 </option>
+                </select>
+                <p id="errordate" class="error-message"></p>
+                <br>
+                <h3 class="formguide">Nombre del titular de la tarjeta</h3>
+                <input onblur="validarNombre()" type="text" id="usercardname" placeholder="Juan Pablo">
+                <p id="errorcardname" class="error-message"></p>
+                <br>
+                <h3 class="formguide">DNI del titular de la tarjeta</h3>
+                <input onblur="validarDNI()" type="number" id="userdni" placeholder="# ### ###">
+                <p id="errordni" class="error-message"></p>
+                <br>
+                <h2>Subtotal: $79.000</h2>
+                <button class="buttonminialt" href="shopcart.html">Cancelar</button>
+                <button class="buttonmini" onclick="validarFormulario()" type="submit">Comprar ahora</button>
+            </form>
+            
+        </div>
+    </div>
+    
+
+</body>

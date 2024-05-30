@@ -1,0 +1,43 @@
+
+
+.button,
+.buttonalt,
+.buttonmini,
+.buttonminialt {
+  padding: 1rem;
+  margin: 0.5rem;
+  width: 100%;
+  border-radius: 2rem;
+  border-color: var(--primario);
+  border-style: solid;
+  border-width: 0.2em;
+  font-size: 1.2rem;
+}
+
+.button {
+  background-color: var(--primario);
+  color: var(--blanco);
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--secundario);
+  transition: 0.2s;
+}
+
+.buttonalt {
+  background-color: white;
+  color: var(--negro);
+}
+
+.buttonmini {
+  width: 40%;
+  background-color: var(--primario);
+  color: var(--blanco);
+}
+
+.buttonminialt {
+  width: 40%;
+  background-color: white;
+  color: var(--negro);
+}
