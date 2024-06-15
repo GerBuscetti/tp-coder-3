@@ -1,0 +1,53 @@
+
+
+@media screen and (max-width: 600px) {
+  #logohome {
+    display: none;
+  }
+
+  #product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .product-item {
+    width: 100%;
+  }
+  
+  .proproduct {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .colprecio,
+  .fotoproducto,
+  .descripcion {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #logohome {
+    display: none;
+  }
+  .imghome,
+  .buynow,
+  .product_name,
+  .price {
+    display: none;
+  }
+  
+  .photoproduct {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  #logohome {
+    display: none;
+  }
+  .imghome,
+  .buynow {
+    display: none;
+  }
+}

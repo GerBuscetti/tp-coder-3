@@ -1,0 +1,42 @@
+$font-family: Arial, sans-serif;
+$font-weight: normal;
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+
+  &.login-registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primario);
+
+    .error {
+      color: var(--error);
+    }
+
+    .success {
+      color: var(--success);
+      border-color: var(--success);
+    }
+  }
+}
+
+.errorMessage {
+  font-size: 1rem;
+  color: var(--error);
+}
+
+.error-message {
+  font-size: 1rem;
+  color: var(--error);
+}
+
+.form.error input {
+  border-color: #ff3860;
+}
+
+.success-box {
+  @extend .success;
+  border-style: solid;
+}
